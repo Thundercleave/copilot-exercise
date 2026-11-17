@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Certificate of Completion</title>
+<style>
+  @page { size: letter landscape; margin: 0.5in; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #1B2430; margin: 0; }
+  .frame { border: 6px double #2457C5; padding: 40px 56px; text-align: center; }
+  .org { font-family: Arial, Helvetica, sans-serif; font-size: 14pt; letter-spacing: 2px; color: #2457C5; text-transform: uppercase; margin: 0; }
+  h1 { font-size: 32pt; font-weight: normal; margin: 18px 0 8px; }
+  .lead { font-size: 13pt; margin: 18px 0 6px; }
+  .name { font-size: 28pt; font-weight: bold; margin: 6px 0 6px; border-bottom: 1px solid #9AA4B2; padding-bottom: 6px; }
+  .program { font-size: 18pt; font-style: italic; margin: 6px 0; }
+  .details { font-size: 13pt; margin: 14px 0; }
+  .statement { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #333C48; margin: 22px auto 0; max-width: 720px; line-height: 1.4; }
+  .footer { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #5B6472; margin-top: 18px; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <p class="org">New York Organization for Nursing Leadership</p>
+  <h1>Certificate of Completion</h1>
+  <p class="lead">This certifies that</p>
+  <p class="name">{{AttendeeName}}</p>
+  <p class="lead">has successfully completed</p>
+  <p class="program">{{ProgramTitle}}</p>
+  <p class="details">held on {{ProgramDate}} &nbsp;·&nbsp; <strong>{{ContactHours}}</strong> contact hours awarded</p>
+  <p class="statement">{{AccreditationStatement}}</p>
+  <p class="footer">Certificate no. {{CertificateNumber}} &nbsp;·&nbsp; Issued {{IssueDate}}</p>
+</div>
+</body>
+</html>
